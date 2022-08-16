@@ -1,0 +1,36 @@
+<html>
+    <script>
+        //Function é apenas uma funcao na pagina, ou seja nao da retorno no console.
+        //2 formas para efetuar a estrutura de uma calculadora.
+        //adicione os if e elses até ter o resultado adequado.
+        function calculo(operacao, num1, num2) {
+        }
+       
+        //AS POSSIVEIS OPERACOES - SOMA, SUBTRACAO, MULTIPLICACAO, DIVISAO, RESTO OU PORCENTAGEM
+        function calculo(operacao, num1, num2) {
+            var resultado;
+
+            if (operacao === "SOMA") {
+                resultado = num1 + num2;
+            } else if (operacao === "SUBTRACAO") {
+                resultado = num1 - num2;
+            } else if (operacao === "MULTIPLICACAO") {
+                resultado = num1 * num2;
+            } else if (operacao === "DIVISAO") {
+                resultado = num1 / num2;
+            } else if (operacao === "RESTO") {
+                resultado = num1 % num2;
+            } else if (operacao === "PORCENTAGEM") {
+                resultado = num1 * num2 / 100;
+                //Informando que a operação não é válida após várias tentativas do algoritmo.
+            } else {
+                console.log("Operação inválida.")
+            }
+
+            return resultado;
+        }
+
+        //caso queira da retorno ja no console.
+        console.log(calculo("SOMA", 1, 1));
+    </script>
+</html>

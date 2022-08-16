@@ -1,0 +1,61 @@
+<html>
+    <script>
+
+        //Na lista dentro do JavaScript, não necessariamente se limita a apenas nomes. Pode ser incluido numeros e simbolos sem problemas.
+        //Listas ou Arrays sempre começam com o "0".
+        var carros = ["Gol", "Palio", "Uno"]
+        console.log(carros);
+
+        var primeiroCarro = carros[0];
+        var segundoCarro = carros[1];
+        var terceiroCarro = carros[2];
+
+        console.log("primeira posicao: " + primeiroCarro);
+        console.log("segunda posicao: " + segundoCarro);
+        console.log("terceira posicao: " + terceiroCarro);
+
+        //Alterando elementos já adiconados.
+        //Exemplo alterando o "terceiroCarro = carros[2]"
+        carros[2] = "Argo";
+        console.log(carros[2]);
+
+        //Sabendo o tamanho do Array(Lista) ou seja a sua quantidade de componentes - "Três elementos na lista"
+        console.log("tamanho do array: " + carros.length);
+
+        //Imprimindo o último elemento do Array (Lista) no console. (Mostrando automaticamente quem é o ultimo da lista)
+        //A lista sempre considera quantos elementos ela possuí, no caso acrescente "-1" para definir o tamanho do array(lista)
+        console.log("ultimo elemento do array: " + carros[carros.length - 1]);
+
+        //Cadastrando um terceiro para teste do ultimo elemento do Array (Lista).
+        carros[3] = "Sandero";
+        console.log("ultimo elemento do array: " + carros[carros.length - 1 ]);
+
+        //Caso onde não saiba o indíce atual(quantos elementos o array possuí), ou seja a ultima posição da lista.
+        //Adicionando novo Carro.
+        carros[carros.length] = "Honda Civic"
+        console.log("ultimo elemento do array: " + carros[carros.length - 1]);
+
+        //Inserindo um elemento/carro com a função ".push"
+        carros.push("Polo");
+        console.log(carros);
+
+        //Inserindo elementos no ínicio da lista com elemento ".unshift".
+        carros.unshift("Jetta");
+        console.log(carros);
+
+        //Removendo o primeiro elemento da lista com elemento ".shift"
+        carros.shift();
+        console.log(carros);
+
+        //Caso queira receber o primeiro elemento que foi removido da lista ".shift"
+        console.log(carros.shift());
+        console.log(carros);
+
+        //Removendo o ultimo elemento da sua lista com elemento ".pop".
+        console.log(carros.pop());
+
+        //Imprimindo novamente após o uso do ".pop"
+        console.log(carros);
+        
+    </script>
+</html> 

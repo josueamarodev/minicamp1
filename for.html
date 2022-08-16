@@ -1,0 +1,22 @@
+<html>
+          
+    <script>
+        // Um diferencial de "For" para "While".
+        // Já no "For" a inicialização, condição de parada e o incremento são inseridos dentro da variável, ou seja na mesma linha.
+        // Separação é feita pelo ";" dentro da linha no for.
+        var nomes = ["João", "Maria", "Jose", "Ana", "Jorge", "Pedro", "Moises"];
+
+        // "var i = (Valor inciado)"
+        // "i < nomes.length" (Teste lógico)
+        // "console.log(nomes[i])" (Execução do código)
+        // "i++" (incremento é essencial para evitar o loop)
+        /* 1ª Como funciona, ele sempre inicializa somente na primeira vez.
+           2ª Faz o teste, e se for verdadeiro segue-se para o incremento
+           3ª incremento*/
+        for (var i = 0; i < nomes.length; i++) {
+            console.log(nomes[i]);
+            console.log(i);
+        }
+
+    </script>
+</html> 

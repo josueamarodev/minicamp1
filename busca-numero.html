@@ -1,0 +1,38 @@
+<html>
+    <script>
+
+        // 1º Passo - Receber um numero como parametro.
+        // 2º Passo - Executar um "for" na lista e para cada elemento verificar se é igual ao número buscado.
+        // 3º Passo - Quando encontrar, interrompemos a execucao e retornando true.
+        // 4º Passo - Se chegar ate o fim sem encontrar, retornar false.
+
+        // 1ª Opção com Bolean.
+        var lista = [19, 54, 18, 11, 47, 98, 36, 44, 87];
+
+        function verificaNumero(numero) {
+            var existe = false;
+            for (var i = 0; i < lista.length; i++) {
+                console.log(i, true);
+                if (lista[i] === numero) {
+                    existe = true;
+                    /*break serve tanto pro "For" como pro "While", serve para interromper estrutura de repetição quando vc quiser,
+                      ou seja, interromper antes que execute a estrutura inteira (Caso tenha mais de 1.000 números para analise) */
+                    break;
+                }
+                    /*consolo.log aceita virgulas.
+                    console.log(i, true);*/
+            }
+            return existe;
+        }
+
+        /* 2ª Opção com "For".
+        var lista = [19, 54, 18, 11, 47, 98, 36, 44, 87];
+        function verificaNumero(numero) {
+            for (var i = 0; i < lista.length; i++)
+                if (lista[i] == numero) {
+                }
+        }*/
+
+
+    </script>
+</html>

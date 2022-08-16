@@ -1,0 +1,27 @@
+<html>
+    <script>
+        var hojeFezCalor = false;
+        var ontemFezCalor = true;
+
+        // Uso do && ou and
+        // Devem ser usados os dois simbolos de "e comerciais" para funcionar.
+        if (hojeFezCalor && ontemFezCalor) {
+            console.log("Fez calor ontem e hoje");
+        }
+
+        // Uso do || ou OR(ou)
+        // Se caso o algoritmo reconhecer que o primeiro valor em si é verdadeiro, ele já considera. No caso entre os dois "hojeFezCalor" e "ontemFezCalor".
+        // Não necessariamente no || necessita dos dois serem true.
+        if (hojeFezCalor || ontemFezCalor) {
+            console.log("Fez calor ontem e hoje")
+        }
+
+        // Operado NOT "!"
+        // Transforma em falso a expressão como todo.
+        // Leva em consideração a variável abaixo (!hojeFezCalor) 
+        if (!hojeFezCalor) {
+            console.log("Hoje não fez calor")
+        }
+
+    </script>
+</html>
